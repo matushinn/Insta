@@ -12,6 +12,7 @@
 		370AA0CF224932A8006F786F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370AA0CD224932A8006F786F /* Main.storyboard */; };
 		370AA0D1224932AA006F786F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370AA0D0224932AA006F786F /* Assets.xcassets */; };
 		370AA0D4224932AA006F786F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370AA0D2224932AA006F786F /* LaunchScreen.storyboard */; };
+		370AA0DC224939CA006F786F /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370AA0DB224939CA006F786F /* SignIn.storyboard */; };
 		91981C761C4D71A228872333 /* Pods_InstaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3BB8FE6D355549DD7D63AF /* Pods_InstaApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		370AA0D0224932AA006F786F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370AA0D3224932AA006F786F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370AA0D5224932AA006F786F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		370AA0DB224939CA006F786F /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		6C3BB8FE6D355549DD7D63AF /* Pods_InstaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC22BA738E58E51F230785A /* Pods-InstaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaApp/Pods-InstaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB69DFA2ABD70A320A77CC9E /* Pods-InstaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaApp/Pods-InstaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				370AA0D0224932AA006F786F /* Assets.xcassets */,
 				370AA0D2224932AA006F786F /* LaunchScreen.storyboard */,
 				370AA0D5224932AA006F786F /* Info.plist */,
+				370AA0DB224939CA006F786F /* SignIn.storyboard */,
 			);
 			path = InstaApp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370AA0DC224939CA006F786F /* SignIn.storyboard in Resources */,
 				370AA0D4224932AA006F786F /* LaunchScreen.storyboard in Resources */,
 				370AA0D1224932AA006F786F /* Assets.xcassets in Resources */,
 				370AA0CF224932A8006F786F /* Main.storyboard in Resources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NCMB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        NCMB.setApplicationKey("c58db0bdcf45ff8383cb65c528f834551baebeabbfa92980433ca6d1fa8d5e07", clientKey: "3d52c68d504efdc3810c9e1e72f1c991cf8dd07deb9970081b89ce89cf7635dd")
+        
+        let ud = UserDefaults.standard
+        let isLogin = ud.bool(forKey: "isLogin")
+        
+        if isLogin == true {
+            //ログイン中
+            //UIScreen.main.bounds = IPhoneと同じ大きさ
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
+            self.window?.rootViewController = rootViewController
+            //何もしていないと黒になるので
+            self.window?.backgroundColor = UIColor.white
+            //その画面を出す
+            self.window?.makeKeyAndVisible()
+            
+            
+        }else{
+            //ログインしていなかったら
+            //UIScreen.main.bounds = IPhoneと同じ大きさ
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "SignIn", bundle: Bundle.main)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+            self.window?.rootViewController = rootViewController
+            //何もしていないと黒になるので
+            self.window?.backgroundColor = UIColor.white
+            //その画面を出す
+            self.window?.makeKeyAndVisible()
+        }
+        
+        
+        
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

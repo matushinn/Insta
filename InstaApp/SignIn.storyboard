@@ -13,7 +13,7 @@
         <!--ログイン-->
         <scene sceneID="w8A-PI-Hmy">
             <objects>
-                <viewController id="OMI-e5-vf6" sceneMemberID="viewController">
+                <viewController id="OMI-e5-vf6" customClass="SignInViewController" customModule="InstaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Je6-Ao-YFx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,9 @@
                                 <state key="normal" title="パスワードをお忘れですか？">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="forgetPassword:" destination="OMI-e5-vf6" eventType="touchUpInside" id="Ble-3D-TPc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アカウントをお持ちでない方はこちらへ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xs-6Z-MIY">
                                 <rect key="frame" x="52" y="387" width="245" height="21"/>
@@ -66,12 +69,19 @@
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="OMI-e5-vf6" eventType="touchUpInside" id="inY-0q-LmD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lhf-qM-LQ1"/>
                     </view>
                     <navigationItem key="navigationItem" title="ログイン" id="JtM-r0-LCC"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="PWb-Ja-zmV" id="6ST-Pd-JMY"/>
+                        <outlet property="userIdTextField" destination="WBY-ch-rNA" id="saj-ED-uHy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0OW-yD-TIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +90,7 @@
         <!--新規登録-->
         <scene sceneID="6tY-15-tGf">
             <objects>
-                <viewController id="UXm-nM-buP" sceneMemberID="viewController">
+                <viewController id="UXm-nM-buP" customClass="SignUpViewController" customModule="InstaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="63o-Ng-5aP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,12 +148,21 @@
                                 <state key="normal" title="新規登録">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="UXm-nM-buP" eventType="touchUpInside" id="mef-94-dKr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Zqm-51-aeU"/>
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="v6W-mI-Zco"/>
+                    <connections>
+                        <outlet property="confirmTextField" destination="KBl-gZ-0bl" id="d89-RR-q52"/>
+                        <outlet property="emailTextField" destination="zoF-VL-srN" id="NWV-ru-L5H"/>
+                        <outlet property="passwordTextField" destination="Nah-VJ-2sb" id="uyf-jQ-0uu"/>
+                        <outlet property="userIdTextField" destination="Se1-qJ-Mct" id="wf6-sW-pLM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYu-GY-4sZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +171,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IYN-nR-Egw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kS3-Jn-dd2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kS3-Jn-dd2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aE7-Ye-1a6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

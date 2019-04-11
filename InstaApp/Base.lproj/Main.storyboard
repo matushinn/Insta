@@ -29,7 +29,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jT7-Gr-mW0">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="egX-cP-UuO" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egX-cP-UuO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sho-io-Dd6">
                         <autoresizingMask key="autoresizingMask"/>

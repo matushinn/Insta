@@ -9,6 +9,7 @@
 
 import UIKit
 import NCMB
+//画像を読み込むためのライブラリ
 import NYXImagesKit
 
 class EditUserInfoViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
@@ -86,10 +87,15 @@ class EditUserInfoViewController: UIViewController,UITextFieldDelegate,UITextVie
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //取り出した値を引数のInfoに入る
         let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
         
+        
+        //ClipToBoundsにチェックを入れる
+        //NYXImagesKit = タテヨコ比を維持しながらbyFactor倍掛けてくれる。
         let resizedImage = selectedImage.scale(byFactor:0.4)
         
+        //pickerを出して閉じる
         picker.dismiss(animated: true, completion: nil)
         
         //let data = UIImagePNGRepresentation(resizedImage!)
@@ -104,6 +110,7 @@ class EditUserInfoViewController: UIViewController,UITextFieldDelegate,UITextVie
                 })
                 
                 alert.addAction(okAction)
+                
                 self.present(alert, animated: true, completion: nil)
                 
             }else{

@@ -23,7 +23,9 @@ class UserPageViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         //ユーザー情報の読み込み
-        let user = NCMBUser.current()
+        //ユーザーを取得
+        //let user = NCMBUser.current()
+        
         if let user = NCMBUser.current(){
             userDisplayNameLabel.text = user.object(forKey: "displayName") as? String
             userIntroductionTextView.text = user.object(forKey: "introduction") as? String

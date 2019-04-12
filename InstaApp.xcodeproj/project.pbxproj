@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3701A814226087B500E33B3D /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701A812226087B500E33B3D /* TimelineTableViewCell.swift */; };
+		3701A815226087B500E33B3D /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3701A813226087B500E33B3D /* TimelineTableViewCell.xib */; };
 		370AA0CA224932A8006F786F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370AA0C9224932A8006F786F /* AppDelegate.swift */; };
 		370AA0CC224932A8006F786F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370AA0CB224932A8006F786F /* ViewController.swift */; };
 		370AA0CF224932A8006F786F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370AA0CD224932A8006F786F /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3701A812226087B500E33B3D /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		3701A813226087B500E33B3D /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		370AA0C6224932A8006F786F /* InstaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		370AA0C9224932A8006F786F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		370AA0CB224932A8006F786F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				3742C4112260182200651EB7 /* SearchViewController.swift */,
 				3742C4132260183700651EB7 /* ShowUserViewController.swift */,
 				3742C4152260387800651EB7 /* EditUserInfoViewController.swift */,
+				3701A812226087B500E33B3D /* TimelineTableViewCell.swift */,
+				3701A813226087B500E33B3D /* TimelineTableViewCell.xib */,
 			);
 			path = InstaApp;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				370AA0DC224939CA006F786F /* SignIn.storyboard in Resources */,
 				370AA0D4224932AA006F786F /* LaunchScreen.storyboard in Resources */,
+				3701A815226087B500E33B3D /* TimelineTableViewCell.xib in Resources */,
 				370AA0D1224932AA006F786F /* Assets.xcassets in Resources */,
 				370AA0CF224932A8006F786F /* Main.storyboard in Resources */,
 			);
@@ -241,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3742C4122260182200651EB7 /* SearchViewController.swift in Sources */,
+				3701A814226087B500E33B3D /* TimelineTableViewCell.swift in Sources */,
 				3742C40E225F000F00651EB7 /* SignInViewController.swift in Sources */,
 				370AA0DE2249DDEF006F786F /* SignUpViewController.swift in Sources */,
 				3742C4142260183700651EB7 /* ShowUserViewController.swift in Sources */,

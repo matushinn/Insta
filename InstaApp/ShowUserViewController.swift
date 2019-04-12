@@ -24,7 +24,7 @@ import Kingfisher
 import SVProgressHUD
 
 
-class ShowUserViewController: UIViewController ,UICollectionViewDataSource{
+class ShowUserViewController: UIViewController {
     
     
     @IBOutlet weak var userImageView: UIImageView!
@@ -40,13 +40,13 @@ class ShowUserViewController: UIViewController ,UICollectionViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoCollectionVIew.dataSource = self
+        //photoCollectionVIew.dataSource = self
         userImageView.layer.cornerRadius = userImageView.bounds.width/2.0
         userImageView.layer.masksToBounds = true
         
         
     }
-    
+    /*
     //返す画像の数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         <#code#>
@@ -56,7 +56,7 @@ class ShowUserViewController: UIViewController ,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         <#code#>
     }
-    
+    */
 
     
     

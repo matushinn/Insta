@@ -32,6 +32,7 @@
                 <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egX-cP-UuO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sho-io-Dd6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -78,17 +79,48 @@
             </objects>
             <point key="canvasLocation" x="2040.8" y="1089.8050974512744"/>
         </scene>
-        <!--View Controller-->
+        <!--User Page View Controller-->
         <scene sceneID="dxA-zy-YaO">
             <objects>
-                <viewController id="HMp-sv-QCL" sceneMemberID="viewController">
+                <viewController id="HMp-sv-QCL" customClass="UserPageViewController" customModule="InstaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ASZ-jB-ZxD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-jQ-V91">
+                                <rect key="frame" x="16" y="88" width="127" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3M-pF-UPh">
+                                <rect key="frame" x="184" y="88" width="137" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O81-9J-xvP">
+                                <rect key="frame" x="174" y="132" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sWP-ZW-Akf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gAB-3F-Oxk"/>
+                    <navigationItem key="navigationItem" id="gAB-3F-Oxk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="X3h-nr-HoO">
+                            <connections>
+                                <action selector="showMenu:" destination="HMp-sv-QCL" id="KNU-8I-2U4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="userDisplayNameLabel" destination="D3M-pF-UPh" id="sK5-II-9YV"/>
+                        <outlet property="userImageVIew" destination="3gD-jQ-V91" id="PR2-VG-EQo"/>
+                        <outlet property="userIntroductionTextView" destination="O81-9J-xvP" id="tYK-dE-cDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIN-s0-7eD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

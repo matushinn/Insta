@@ -16,6 +16,9 @@
 		370AA0DE2249DDEF006F786F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370AA0DD2249DDEF006F786F /* SignUpViewController.swift */; };
 		3742C40E225F000F00651EB7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742C40D225F000F00651EB7 /* SignInViewController.swift */; };
 		3742C410225F061500651EB7 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742C40F225F061400651EB7 /* UserPageViewController.swift */; };
+		3742C4122260182200651EB7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742C4112260182200651EB7 /* SearchViewController.swift */; };
+		3742C4142260183700651EB7 /* ShowUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742C4132260183700651EB7 /* ShowUserViewController.swift */; };
+		3742C4162260387800651EB7 /* EditUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742C4152260387800651EB7 /* EditUserInfoViewController.swift */; };
 		91981C761C4D71A228872333 /* Pods_InstaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3BB8FE6D355549DD7D63AF /* Pods_InstaApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		370AA0DD2249DDEF006F786F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3742C40D225F000F00651EB7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3742C40F225F061400651EB7 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		3742C4112260182200651EB7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3742C4132260183700651EB7 /* ShowUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowUserViewController.swift; sourceTree = "<group>"; };
+		3742C4152260387800651EB7 /* EditUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserInfoViewController.swift; sourceTree = "<group>"; };
 		6C3BB8FE6D355549DD7D63AF /* Pods_InstaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC22BA738E58E51F230785A /* Pods-InstaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaApp/Pods-InstaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB69DFA2ABD70A320A77CC9E /* Pods-InstaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaApp/Pods-InstaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 				370AA0DD2249DDEF006F786F /* SignUpViewController.swift */,
 				3742C40D225F000F00651EB7 /* SignInViewController.swift */,
 				3742C40F225F061400651EB7 /* UserPageViewController.swift */,
+				3742C4112260182200651EB7 /* SearchViewController.swift */,
+				3742C4132260183700651EB7 /* ShowUserViewController.swift */,
+				3742C4152260387800651EB7 /* EditUserInfoViewController.swift */,
 			);
 			path = InstaApp;
 			sourceTree = "<group>";
@@ -231,10 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742C4122260182200651EB7 /* SearchViewController.swift in Sources */,
 				3742C40E225F000F00651EB7 /* SignInViewController.swift in Sources */,
 				370AA0DE2249DDEF006F786F /* SignUpViewController.swift in Sources */,
+				3742C4142260183700651EB7 /* ShowUserViewController.swift in Sources */,
 				3742C410225F061500651EB7 /* UserPageViewController.swift in Sources */,
 				370AA0CC224932A8006F786F /* ViewController.swift in Sources */,
+				3742C4162260387800651EB7 /* EditUserInfoViewController.swift in Sources */,
 				370AA0CA224932A8006F786F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
